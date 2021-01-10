@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import { useStateValue } from "./StateProvider";
 
 function App() {
+  const [{ msg }, dispatch] = useStateValue();
   return (
     <div className="app">
-      
+      <h1>Hi</h1>
     </div>
   );
 }
